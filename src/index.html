@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسک دوره جاوااسکریپت</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>لیست تراکنش ها</h1>
+        <div class="search-container" id="search" style="display: none">
+          <span class="search-icon">
+            <img src="/assets/icon/search.svg" alt="" />
+          </span>
+          <input type="text" placeholder="جستجو تراکنش..." dir="rtl" />
+        </div>
+      </div>
+
+      <div>
+        <button id="load-btn">بارگذاری تراکنش ها</button>
+        <div id="loader" style="display: none" class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="transaction-list" style="display: none">
+        <h2>لیست تراکنش های شما</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>ردیف</th>
+                <th>نوع تراکنش</th>
+                <th>
+                  <div class="select-wrapper">
+                    <select class="select" data-sort="price">
+                      <option value="">مبلغ</option>
+                      <option value="desc">بیشترین قیمت</option>
+                      <option value="asc">کمترین قمیت</option>
+                    </select>
+                    <img
+                      src="/assets/icon/down.svg"
+                      class="arrow"
+                      alt="arrow" />
+                  </div>
+                </th>
+                <th>شماره پیگیری</th>
+                <th>
+                  <div class="select-wrapper">
+                    <select class="select" data-sort="date">
+                      <option value="">تاریخ تراکنش</option>
+                      <option value="desc">جدید ترین</option>
+                      <option value="asc">قدیمی ترین</option>
+                    </select>
+                    <img
+                      src="/assets/icon/down.svg"
+                      class="arrow"
+                      alt="arrow" />
+                  </div>
+                </th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
