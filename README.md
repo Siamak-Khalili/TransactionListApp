@@ -42,7 +42,6 @@ To run the project locally, follow these steps:
 
 Clone the Repository:
 git clone [https://github.com/your-username/TransactionListApp.git
-cd TransactionListApp](https://github.com/Siamak-Khalili/TransactionListApp/edit/main/README.md)
 
 
 Install Dependencies:Ensure Node.js is installed, then run:
