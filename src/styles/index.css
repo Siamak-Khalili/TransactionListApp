@@ -334,6 +334,7 @@ td {
   padding: 1.5rem;
   text-align: center;
   box-sizing: border-box;
+  text-wrap: nowrap;
 }
 
 table tr:last-child td {
