@@ -40,8 +40,7 @@ npm for dependency management
 Setup and Installation
 To run the project locally, follow these steps:
 
-Clone the Repository:
-git clone [https://github.com/your-username/TransactionListApp.git
+
 
 
 Install Dependencies:Ensure Node.js is installed, then run:
